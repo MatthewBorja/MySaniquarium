@@ -37,7 +37,6 @@ void display(){
 	food[j].draw();
 	food[j].update();
   }
-  //cout << "food size: " << food.size() << endl;
   glutSwapBuffers();
 }
 
@@ -104,12 +103,10 @@ void addFish(float x, float y){
   if(fish.size() < 5){
   	Fish newFish(x, y, 0);
   	fish.push_back(newFish);
-	//cout << "New fish added at " << x << ", " << y << ", 0" << endl;
   }
 }
 
 void feed(float x, float y){
   Food newFood(x, y, 0);
   food.push_back(newFood);
-  //cout << "New food pellet added at " << x << ", " << y << ", 0" << endl;
 }
